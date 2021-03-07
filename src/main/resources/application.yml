@@ -1,0 +1,27 @@
+server:
+  port: 9999
+spring:
+  application:
+    name: anshanFetch
+durid:
+  data:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://49.233.56.20:48256/tb?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    username: anshanUnicom
+    password: ningbaoqizuishuai
+    initialSize: 5
+    minIdle: 10
+    maxActive: 500
+    maxWait: 60000
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+    testWhileIdle: true
+    testOnBorrow: true
+    testOnReturn: false
+    poolPreparedStatements: true
+    maxPoolPreparedStatementPerConnectionSize: 10
+    validationQuery: SELECT 1
+    removeAbandoned: true
+    removeAbandonedTimeout: 1800
+    logAbandoned: true
+    filters: stat,wall,logback
